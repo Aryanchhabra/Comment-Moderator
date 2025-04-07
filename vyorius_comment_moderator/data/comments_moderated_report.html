@@ -1,0 +1,158 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Vyorius Comment Moderation Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #333; }
+                .container { max-width: 1200px; margin: 0 auto; }
+                h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+                h2 { color: #3498db; margin-top: 30px; }
+                .summary-box { background-color: #f8f9fa; border-radius: 5px; padding: 20px; margin-bottom: 30px; }
+                .stats { display: flex; justify-content: space-around; flex-wrap: wrap; }
+                .stat-card { background-color: white; border-radius: 5px; padding: 15px; margin: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); min-width: 200px; text-align: center; }
+                .stat-card h3 { margin-top: 0; color: #2c3e50; }
+                .stat-card .number { font-size: 24px; font-weight: bold; color: #3498db; }
+                table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+                th, td { padding: 12px 15px; border-bottom: 1px solid #ddd; text-align: left; }
+                th { background-color: #3498db; color: white; }
+                tr:hover { background-color: #f5f5f5; }
+                .offense-type { display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; color: white; }
+                .hate_speech { background-color: #e74c3c; }
+                .harassment { background-color: #9b59b6; }
+                .profanity { background-color: #e67e22; }
+                .threat { background-color: #c0392b; }
+                .misinformation { background-color: #f39c12; }
+                .toxicity { background-color: #d35400; }
+                .footer { margin-top: 50px; text-align: center; font-size: 14px; color: #7f8c8d; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Vyorius Comment Moderation Report</h1>
+                
+                <div class="summary-box">
+                    <h2>Summary Statistics</h2>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <h3>Total Comments</h3>
+                            <div class="number">20</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Offensive Comments</h3>
+                            <div class="number">11 (55.0%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Pre-Filtered</h3>
+                            <div class="number">3</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Offense Type Breakdown</h2>
+                <table>
+                    <tr>
+                        <th>Offense Type</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                    </tr>
+        
+                    <tr>
+                        <td><span class="offense-type profanity">profanity</span></td>
+                        <td>3</td>
+                        <td>27.3%</td>
+                    </tr>
+            
+                    <tr>
+                        <td><span class="offense-type toxicity">toxicity</span></td>
+                        <td>2</td>
+                        <td>18.2%</td>
+                    </tr>
+            
+                    <tr>
+                        <td><span class="offense-type threat">threat</span></td>
+                        <td>2</td>
+                        <td>18.2%</td>
+                    </tr>
+            
+                    <tr>
+                        <td><span class="offense-type hate_speech">hate_speech</span></td>
+                        <td>2</td>
+                        <td>18.2%</td>
+                    </tr>
+            
+                    <tr>
+                        <td><span class="offense-type harassment">harassment</span></td>
+                        <td>1</td>
+                        <td>9.1%</td>
+                    </tr>
+            
+                    <tr>
+                        <td><span class="offense-type misinformation">misinformation</span></td>
+                        <td>1</td>
+                        <td>9.1%</td>
+                    </tr>
+            
+                </table>
+                
+                <h2>Top Offensive Comments</h2>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Comment</th>
+                        <th>Offense Type</th>
+                        <th>Explanation</th>
+                    </tr>
+        
+                    <tr>
+                        <td>5</td>
+                        <td>angry_neighbor</td>
+                        <td>These f***ing drones keep violating my privacy! I will shoot them down next time!</td>
+                        <td><span class="offense-type threat">threat</span></td>
+                        <td>Contains potentially profanity term 'f***'; Contains potentially threat term 'shoot'; Strong negative sentiment detected</td>
+                    </tr>
+            
+                    <tr>
+                        <td>15</td>
+                        <td>concerned_citizen</td>
+                        <td>These drones are becoming a threat to our children's safety and privacy!</td>
+                        <td><span class="offense-type threat">threat</span></td>
+                        <td>Contains potentially threat term 'threat'</td>
+                    </tr>
+            
+                    <tr>
+                        <td>8</td>
+                        <td>minority_user</td>
+                        <td>People from my country aren't allowed to use these services. This is discriminatory!</td>
+                        <td><span class="offense-type hate_speech">hate_speech</span></td>
+                        <td>Contains potentially hate_speech term 'discriminatory'</td>
+                    </tr>
+            
+                    <tr>
+                        <td>18</td>
+                        <td>racist_user</td>
+                        <td>These foreigners don't know how to make proper technology. Go back to your country!</td>
+                        <td><span class="offense-type hate_speech">hate_speech</span></td>
+                        <td>Contains potentially hate_speech term 'foreigners'</td>
+                    </tr>
+            
+                    <tr>
+                        <td>7</td>
+                        <td>racer44</td>
+                        <td>Anyone else think the new drone model sucks? Such a waste of money!</td>
+                        <td><span class="offense-type harassment">harassment</span></td>
+                        <td>Contains potentially harassment term 'sucks'</td>
+                    </tr>
+            
+                </table>
+                
+                <div class="footer">
+                    <p>Generated by Vyorius Comment Moderation Tool</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        

@@ -1,0 +1,21 @@
+comment_id,username,comment_text,is_offensive,offense_type,explanation,pre_filtered,mock_mode
+1,user123,Great service as always. The drone delivery was right on time!,False,,No offensive content detected,False,True
+2,skyfan,These drones are super annoying when flying over my house.,True,toxicity,Contains potentially toxicity term 'annoying',False,True
+3,drone_hater,I hate these stupid drones and the idiots who fly them!,True,profanity,Comment contains explicit profanity based on keyword matching,True,False
+4,tech_guy,Just received my package. The delivery system is efficient.,False,,No offensive content detected,False,True
+5,angry_neighbor,These f***ing drones keep violating my privacy! I will shoot them down next time!,True,threat,Contains potentially profanity term 'f***'; Contains potentially threat term 'shoot'; Strong negative sentiment detected,False,True
+6,reviewer,The drone performance could be better in windy conditions.,False,,No offensive content detected,False,True
+7,racer44,Anyone else think the new drone model sucks? Such a waste of money!,True,harassment,Contains potentially harassment term 'sucks',False,True
+8,minority_user,People from my country aren't allowed to use these services. This is discriminatory!,True,hate_speech,Contains potentially hate_speech term 'discriminatory',False,True
+9,helpful_user,"For those having battery issues, try calibrating before first use.",False,,No offensive content detected,False,True
+10,troll_account,Drone operators are all fat losers living in their mother's basement lol,True,profanity,Comment contains explicit profanity based on keyword matching,True,False
+11,upset_customer,My delivery was 30 minutes late. Not happy with the service.,False,,No offensive content detected,False,True
+12,tech_enthusiast,The camera quality is impressive for this price range.,False,,No offensive content detected,False,True
+13,pilot01,If you can't fly a drone properly you should kill yourself instead of posting here,True,profanity,Comment contains explicit profanity based on keyword matching,True,False
+14,reasonable_person,Had some issues with registration but customer service resolved them quickly.,False,,No offensive content detected,False,True
+15,concerned_citizen,These drones are becoming a threat to our children's safety and privacy!,True,threat,Contains potentially threat term 'threat',False,True
+16,happy_customer,Love my new drone! Best purchase this year!,False,,No offensive content detected,False,True
+17,legit_user,Vyorius drones are secretly spying for the government. Wake up sheeple!,True,misinformation,Contains potentially misinformation term 'secretly',False,True
+18,racist_user,These foreigners don't know how to make proper technology. Go back to your country!,True,hate_speech,Contains potentially hate_speech term 'foreigners',False,True
+19,drone_pro,Consider upgrading the propellers for better stability in high winds.,False,,No offensive content detected,False,True
+20,anonymous,I hope all drone companies go bankrupt. Useless technology. ,True,toxicity,Contains potentially toxicity term 'useless',False,True
